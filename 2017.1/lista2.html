@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista 2</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>	        	
+    </head>
+    <body>
+      <h1>Visualização de Dados 2017.1 Lista de Exercícios 2</h1>
+      <!--------------------------------- -->
+      <div id="info"> 
+	<h2>Informações Gerais</h2>
+	O objetivo desta lista é praticar os conceitos vistos em sala e construir uma base de código que será possivelmente útil para o projeto da disciplina.
+	É recomendada a leitura do livro <em>Interactive Data Visualization for the Web</em> e também o uso da documentação da <em>Mozilla Developer Network</em>.
+	Nesta lista, usaremos um conjunto de dados de passagens aéreas que pode ser encontrado neste <a href="https://visualizacao-ufpe.github.io/data_vis_assignments/2017.1/data/trips.js">link</a>. Para usar o dataset inclua o arquivo <em>trips.js</em> nos htmls criados.
+      </div>
+      <!--------------------------------- -->
+      <div id="duedate"> 
+      <h2>Data de Entrega</h2>
+      A entrega deverá ser feita via GitHub até 07/04/2017 até 23:59. Veja as instruções para entrega <a href="https://visualizacao-ufpe.github.io/data_vis_course_website/spring_2017/assignments.html">aqui</a>.
+      </div>
+      <!--------------------------------- -->
+      <div id="problem1"> 
+	<h2>Problema 1</h2>
+	O objetivo deste exercício é criar um sistema com duas vistas coordenadas para visualização dos dados das viagens aéreas citado acima. A primeira vista deve conter um histograma que mostra no número de viagens aéreas por compainha. A segunta é um scatterplot que deve mostrar a diferença do numéro de dias entre a postagem do preço e o incício da viagem no eixo X (<em>post</em> e <em>start</em>) e o preço da passagem no eixo Y.
+
+	Para coordenas as vistas, implemente as seguintes ações:
+
+	<ul>
+	  <li>O scatterplot deve implementar uma ação brush. Esta ação deve atualizar o histograma para mostrar a quantidade de pontos selecionados no scatterplot para cada uma das companhias.</li>
+	  <li>As barras do histograma devem funcionar como checkboxes, i.e., quando clicadas devem esconder/mostrar os dados da companhia aérea correspondente. As ações do scatterplot devem só ter efeito nos pontos ativos (mostrados na tela)</li>
+	</ul>
+
+      </div>
+      <!--------------------------------- -->
+      <div id="problem2"> 
+	<h2>Problema 2</h2>
+	Para a solução deste problema, crie um arquivo <em>problema2.html</em> e outro chamado <em>problema2.js</em>. Neste problema, incrementaremos o gráfico de dispersão (<a href="https://en.wikipedia.org/wiki/Scatter_plot"><em>scatter plot</em></a>) que implementamos nas aulas 3 e 4.
+	O objetivo é criar um gráfico de dispersão que plote dados dinâmicos. Para tanto, crie uma página html que contém o gráfico de dispersão e um botão. Cada vez que o botão for clicado,
+	um número aleatório N (entre 10 e 50, por exemplo) deve ser gerado para representar o tamanho do dataset a ser visualizado. Deve-se então gerar N pontos com 4 coordenadas (x,y,z,w), todas entre 0 e 100.
+	As coordenadas x e y devem ser usadas para posicionar os pontos no scatter plot, enquanto que a coordenada z deve ser mapeada para o raio dos círculos e a coordenada w deve ser mapeada através de cores nos pontos seguindo uma escala de cinza para azul. O gráfico deve conter eixos, como visto em sala. O número N deve ser mostrado na página html.	
+	
+      </div>
+      <!--------------------------------- -->
+      <div id="problem3"> 
+	<h2>Problema 3</h2>
+	Para a solução deste problema, crie um arquivo <em>problema3.html</em> e outro chamado <em>problema3.js</em>. Neste problema, o nosso objetivo é criar uma função que gera visualizações de séries temporais.
+	<br>
+	<br>
+	Como dataset de teste, usaremos os dados climáticos da cidade de São Paulo contidos na <a href="https://en.wikipedia.org/wiki/S%C3%A3o_Paulo" target="_blank">wikipedia</a>, na seção <em>Climate</em>.
+	Crie um gráfico que mostre a evolução da temperatura mínima média, temperatura média e temperatura máxima (todas em graus celsius). A temperatura mínima dever ser visualizada como uma linha azul, a média como uma linha preta e a máxima como uma linha vermelha. O eixo X deve usar uma escala de tempo que mostra os meses do ano, como nos dados.
+
+	O gráfico deve se assemelhar ao gráfico abaixo:
+        <center><img src="figs/sample_temp_plot.jpg"></a></center>
+	
+	
+      </div>
+
+
+
+    </body>
+</html>   

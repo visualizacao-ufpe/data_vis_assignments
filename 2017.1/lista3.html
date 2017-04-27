@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista 2</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>	        	
+    </head>
+    <body>
+      <h1>Visualização de Dados 2017.1 Lista de Exercícios 3</h1>
+      <!--------------------------------- -->
+      <div id="info"> 
+	<h2>Informações Gerais</h2>
+	O objetivo desta lista é praticar os conceitos vistos em sala e construir uma base de código que será possivelmente útil para o projeto da disciplina.
+	É recomendada a leitura do livro <em>Interactive Data Visualization for the Web</em> e também o uso da documentação da <em>Mozilla Developer Network</em>.
+      </div>
+      <!--------------------------------- -->
+      <div id="duedate"> 
+      <h2>Data de Entrega</h2>
+      A entrega deverá ser feita via GitHub até 05/05/2017 até 23:59. Veja as instruções para entrega <a href="https://visualizacao-ufpe.github.io/data_vis_course_website/spring_2017/assignments.html">aqui</a>.
+      </div>
+      <!--------------------------------- -->
+      <div id="problem1"> 
+	<h2>Problema 1</h2>
+	Neste problema usaremos a implementação do algorítimo de <a href="https://bl.ocks.org/mbostock/4062045" target="_blank">Force Directed Layout</a> (FDL) para construir uma visualização de dados multi-dimensionais. Como teste usaremos o conjunto de dados <a href="https://visualizacao-ufpe.github.io/data_vis_assignments/2017.1/data/iris.json" target="_blank">iris</a>, que contém 4 dimensões.
+	</br>	
+	Crie uma página html chamada <em>problema1.html</em>. Esta página deve conter um combo box (drop-drown menu) que permite ao usuário escolher o parâmetro N que corresponde ao número de vizinhos mais próximos, utilizados para construir o grafo de vizinhança (como visto em sala). N deve variar de 5 a 15. Quando o valor do combo box muda de valor, o seu sistema deve montar o grafo de vizinhança correspondente e usar o FDL para mostrar o grafo na tela. Além disso, você deve colorir os pontos de acordo com o atributo <em>species</em> do dataset e incluir uma legenda para ser possível a identificação da espécie.
+      </div>
+
+      <!--------------------------------- -->
+      <div id="problem2"> 
+	<h2>Problema 2</h2>
+	Neste problema usaremos Treemaps para visualizar <a href="https://visualizacao-ufpe.github.io/data_vis_assignments/2017.1/data/recife-dados-despesas-2015.csv">despesas públicas no ano de 2015</a>.
+	Estamos interessados em investigar os seguintes orgãos: GABINETE DO PREFEITO, GABINETE DO VICE-PREFEITO, SECRETARIA DE EDUCAÇÃO, SECRETARIA DE MOBILIDADE E CONTROLE URBANO, SECRETARIA DE SAÚDE, SECRETARIA DE MULHER, SECRETARIA DE HABITAÇÃO, SECRETARIA DE ENFRENTAMENTO AO CRACK E OUTRAS DROGAS, SECRETARIA DE IMPRENSA e SECRETARIA DE JUVENTUDE E QUALIFICAÇÃO PROFISSIONAL. Note que no conjunto de dados contém gastos para estes órgãos e que cada órgão pode conter uma ou mais unidades.	
+	<br>
+	Use o <a href="https://bl.ocks.org/mbostock/6bbb0a7ff7686b124d80">Treemap Layout do D3</a> para montar uma visualização das despesas de cada um dos órgãos acima. A hierárquia montada deve ser: Receife - Órgão - Unidade. O tamanho dos retângulos deve ser proporcional ao tamanho da despesa total feita pelo órgão.	
+      </div>
+      
+      <!--------------------------------- -->
+      <div id="problem3"> 
+	<h2>Problema 3</h2>
+	Na aula 8 (sobre visualização de mapas), implementamos um choropleth dos estados unidos usando projeções em d3. Implemente interações de zoom e pan neste mapa. Além disso, implemente um <a href="https://bl.ocks.org/d3noob/257c360b3650b9f0a52dd8257d7a2d73" target="_blank">tooltip</a> para cada estado no mapa de tal forma que quando o mouse passar por cima de um estado, o nome do mesmo e os dados de produtividade (dados mostrados no choropleth) devem ser mostrados no tooltip.
+      </div>
+
+    </body>
+</html>   

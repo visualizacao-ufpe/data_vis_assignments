@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista 1</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>	        	
+    </head>
+    <body>
+      <h1>Visualização de Dados 2017.2 Lista de Exercícios 2</h1>
+      <!--------------------------------- -->
+      <div id="info"> 
+	<h2>Informações Gerais</h2>
+	O objetivo desta lista é praticar os conceitos vistos em sala e construir uma base de código que será possivelmente útil para o projeto da disciplina.
+	É recomendada a leitura dos capítulos 3 a 8 do livro <em>Interactive Data Visualization for the Web</em> e também o uso da documentação da <em>Mozilla Developer Network</em>.
+      </div>
+      <!--------------------------------- -->
+      <div id="duedate"> 
+      <h2>Data de Entrega</h2>
+      A entrega deverá ser feita via GitHub até 09/09/2017 até 23:59. Veja as instruções para entrega no Google Classroom.
+      </div>
+      <!--------------------------------- -->
+      <div id="problem1"> 
+	<h2>Problema 1</h2>
+	Em visualizações que apresentam eixos que representam escalas com domínios bastante espaçados, muitas vezes identificar a localização de um ponto no domínio da escala. Para solucionar este problema, é comum usar interação para ajudar usuários a "se encontrar" no gráfico. Vamos exercitar este contecito neste problema.<br>
+	Para tanto, incremente o exercício 3 da lista 1 implemente o auxílio de localização com uma linha vertical que se move com o mouse. Ao lado desta linha deve ser escrito o tempo correspondente a linha no formato Mês-Ano (por exemplo, Jul 2000). Além disso, a intersecção da linha com as duas retas deve ser indicada com pontos e com o valor do eixo y correspondente, como na figura abaixo.
+
+	<center>
+	  <img src="figs/sample_interface_3.png"></img>
+	</center>
+		
+	A resposta deste arquivo deve ser elaborada em dois arquivos, <em>problema1.html</em> e <em>problema1.js</em>.
+
+      </div>
+      <!--------------------------------- -->
+      <div id="problem2"> 
+	<h2>Problema 2</h2>
+	Para a solução deste problema, crie um arquivo <em>problema2.html</em> e outro chamado <em>problema2.js</em>. Neste problema, implementaremos uma <em><a herf="http://en.wikipedia.org/wiki/Scatter_plot#Scatterplot_matrices">scatterplot matrix</a></em> para visualizar o famoso dataset multidimensional <em><a href="data/cars.csv">cars</a></em>. Em cada scatterplot da matriz, os pontos devem estar coloridos de acordo com a coluna cylinders (uma cor diferente para cada valor nesta coluna. Este <a href="https://web.natur.cuni.cz/~langhamr/lectures/vtfg1/mapinfo_2/barvy/colors.html">link</a> contém algumas definições sobre esquemas de cores. Use um dos esquemas de cores qualitativos contida <a href="http://colorbrewer2.org/">aqui</a>). Além disso, cada scatterplot deve suportar operações de brushing (pontos fora da região de brushing devem ser tornados transparentes ou mostrados com menos evidência). Os brushes devem ser coordenados, isto é, a seleção de um scatterplot deve evidenciar os pontos correspondentes nos outros. Quando o usuário iniciar o brush em um dos plots, qualquer brush ativo deve ser apagado, isto é, somente um brush deve ser permitido na scatterplot matrix.
+      </div>
+      <!--------------------------------- -->
+      <div id="problem3"> 
+	<h2>Problema 3</h2>
+	Para a solução deste problema, crie um arquivo <em>problema3.html</em> e outro chamado <em>problema3.js</em>. Neste problema, o nosso objetivo é criar uma visualização composta vistas múltiplas, cada vista sendo um gráfico de linha, como na questão 3 da lista 1. Para este problema, use o <a href="data/aids.csv">conjundo de dados</a> de taxa de óbito de AIDS para cada estado da região nordeste. Os plots devem estar coordenados para intereções de zoom e pan, isto é, se o usuário fizer uma operação de zoom/pan em um dos gráficos, todos os outros devem sofrer a mesma operação.		
+      </div>
+    </body>
+</html>   

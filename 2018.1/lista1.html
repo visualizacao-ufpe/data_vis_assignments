@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista 1</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>	        	
+    </head>
+    <body>
+      <h1>Visualização de Dados 2018.1 Lista de Exercícios 1</h1>
+      <!--------------------------------- -->
+      <div id="info"> 
+	<h2>Informações Gerais</h2>
+	O objetivo desta lista é praticar os conceitos vistos em sala e construir uma base de código que será possivelmente útil para o projeto da disciplina.
+	É recomendada a leitura dos capítulos 1 e 2 do livro <em>Interactive Data Visualization for the Web 2nd Edition</em> e também o uso da documentação da <em>Mozilla Developer Network</em>.
+      </div>
+      <!--------------------------------- -->
+      <div id="duedate"> 
+      <h2>Data de Entrega</h2>
+      A entrega deverá ser feita via GitHub até 29/03/2018 até 23:59. Instruções para entrega no Google Classroom. Os arquivos deveram ser entregues dentro de uma pasta chamada <b>lista1</b>. 
+      </div>
+      <!--------------------------------- -->
+      <div id="problem1"> 
+	<h2>Problema 1</h2>
+	Crie um arquivo chamado <em>problema1.html</em>. Neste arquivo crie um elemento SVG que mostre as 3 primeiras letras do seu login (se você estiver se sentindo aventureiro, faça o login completo).
+	Por exemplo, considere o login de "John Adam Smith": "JAS". O resultado deve ser semelhante a
+
+	<center><img src="figs/lista1_login.png" height="150px"></a></center>
+	
+Para sua solução você deve usar somente elementos de SVG line, polyline, rectangle, e path. Você não precisa usar curvas (mas pode se desejar).
+
+Sua solução deve ser desenhada em um svg de 250x150. Por exemplo, você pode copiar o código seguite na sua página
+
+
+	<pre>
+	  <code>&lt;svg id="initials" width="250" height="150"&gt;
+	    &lt;!-- Os seus elementos svg aquiYOUR SVG HERE --&gt;
+	    &lt;/svg&gt;
+	  </code>
+	</pre>
+</div>
+
+      <!--------------------------------- -->
+      <div id="problem2"> 
+	<h2>Problema 2</h2>
+	Crie um arquivo chamado <em>problema2.html</em>. Neste arquivo inclua o arquivo <i>datasetProblema2.js</i>. Este arquivo define um conjunto de dados sobre a quantidade de livros lidos por uma pessoa ao longo dos anos. Para cada ano temos informação da quantidade de livros lidos (campo books) e o gênero favorito daquele ano (favoriteGenre). Queremos construir um gráfico de barras para mostrar a quantidade de livros lidas durante os anos. O seu gráfico de barras deve se assemalhar ao seguinte:
+
+	<center><img src="figs/lista1_barchart.png" height="300px"></a></center>
+
+A diferença será que as barras devem ser coloridas de acordo com gênero favorito de cada ano. Romance , Policial, Biografia, Ficcao, Conto, Cronica e Poesia devem ser coloridos por ['#fbb4ae','#b3cde3','#ccebc5','#decbe4','#fed9a6','#ffffcc','#e5d8bd'] (nessa ordem).
+
+      </div>
+      <!--------------------------------- -->
+      <div id="problem3"> 
+	<h2>Problema 3</h2>
+No mesmo arquivo de solução do problema 2, escreva uma função que destaca uma barra dado o ano. Mais especificamente, escreva uma função chamada highlightYear que recebe um ano (exemplo 2002) e muda a borda da barra correspondente para a cor preta e de uma largura grande para que ela seja destacada das outras. Esse highlight deve ser de acordo com um slider criado com o código abaixo
+
+<pre><code>&lt;div id="controls"&gt;
+  &lt;label for="year"&gt;Year:&lt;/label&gt;
+  1990
+  &lt;input type="range" id="year" min="1990" max="2017" value="2002"
+     onchange="highlightYear(this.value)"&gt;
+  2017
+&lt;/div&gt;</code></pre>
+	
+	
+</div>
+
+    </body>
+</html>   

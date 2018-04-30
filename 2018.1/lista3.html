@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista 2</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>	        	
+    </head>
+    <body>
+      <h1>Visualização de Dados 2018.1 Lista de Exercícios 3</h1>
+      <!--------------------------------- -->
+      <div id="info"> 
+	<h2>Informações Gerais</h2>
+	O objetivo desta lista é praticar os conceitos vistos em sala e construir uma base de código que será possivelmente útil para o projeto da disciplina.
+	É recomendada a leitura dos capítulos 1 e 2 do livro <em>Interactive Data Visualization for the Web 2nd Edition</em> e também o uso da documentação da <em>Mozilla Developer Network</em>.
+      </div>
+      <!--------------------------------- -->
+      <div id="duedate"> 
+      <h2>Data de Entrega</h2>
+      A entrega deverá ser feita via GitHub até 07/05/2018 até 23:59. Instruções para entrega no Google Classroom. Os arquivos deveram ser entregues dentro de uma pasta chamada <b>lista2</b>. 
+      </div>
+      <!--------------------------------- -->
+      <div id="problem1"> 
+	<h2>Problema 1</h2>
+	O objetivo deste problema é estudar as ocorrências aeronáuticas que ocorreram na aviação civil brasileira.
+	Para tanto, usaremos <a href="https://raw.githubusercontent.com/nosbielcs/opendata_aig_brazil/master/data/oco.csv">este dataset</a>.
+
+	Sua tarefa é implementar um sistema de visualização que permita mapear as ocorrências dadas no arquivo anterior usando as ferramentas de projeções geográficas do D3. Precisamos de três visualizações.
+	A primeira, as ocorrências devem ser mostradas como pontos sobre o mapa de municípios do Brasil (<a href="https://github.com/tbrugz/geodata-br">dados</a>). Os pontos devem ser coloridos de acordo com a coluna "ocorrencia_classificacao", vermelho para acidente, azul para incidente e verde para outros valores.
+
+	A segunda visualização deve mostrar um choropleth do número de ocorrências por estado (<a href="https://github.com/codeforamerica/click_that_hood/blob/master/public/data/brazil-states.geojson">dados</a>).
+	Escolha uma escala de cores apropriada e mostre uma legenda para as cores escolhidas.
+	
+	Finalmente, a tercerira visualização deve mostrar o número de ocorrências por município brasileiro. Novamente, escolha uma escala de cores apropriada e mostre uma legenda.
+	O usuário deve ser capaz de mudar de uma visualização para outra por meio de um radio button.
+
+	Use como referência o capítulo de Geomapping do livro de referência acima.
+</div>
+
+      <!--------------------------------- -->
+      <div id="problem2"> 
+	<h2>Problema 2</h2>
+	Repita o problema anterior usando a biblioteca leaflet.js para obter mapas mais "profissionais". Para referência use os tutoriais da página do <a href="http://leafletjs.com/examples.html" target="_blank">leaflet</a>.
+      </div>
+      
+      <!--------------------------------- -->
+      <div id="problem3"> 
+	<h2>Problema 3</h2>
+	Neste problema estudaremos a <a href="http://dados.gov.br/dataset/taxa-de-obitos-por-aids">taxa de óbitos por AIDS nas regiões metropolitanas do Brasil</a> (% de óbitos por AIDS - Regiões Metropolitanas).
+	O conjunto de dados contém dados para cada região metropolitana de 1990 até 2009. Ao invés de explorar estes dados por meio de visualizações de timeseries diretamente, usaremos a abordagem de redução de dimensionalidade para tentar buscar semelhanças entre regiões metropolitanas.
+	Para isso, use o <a href="https://github.com/karpathy/tsnejs">TSNE</a> (veja exemplo de uso do código neste link) para projetar estes dados, assumindo que cada ano corresponde a uma dimensão dos dados.
+	Uma vez que os dados estejam projetados, plote os mesmos por meio de círculos, um para cada região metropolitana. Deve ser possível ver o nome de cada região ao se passar o mouse por cima da mesma.	
+</div>
+
+    </body>
+</html>   
